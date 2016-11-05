@@ -1,0 +1,16 @@
+{
+	"bla":"bla",
+	"zipcode" : "30324",
+	"pricesbycpt" : {
+		"241xray" : "avgprice",
+		"315ct" : "avgprice",
+		"513mri" : "avgprice"
+	} ,
+	"providers" : [
+		{
+			"provider": "bla"
+		}
+	]
+}
+
+

@@ -1,0 +1,648 @@
+{
+	"zipcode" : "30324",
+	"insurancePricesByCPT" : {
+		"76700" : 156.861718061674,
+		"70460" : 356.91030000000006,
+		"72157" : 953.43
+	} ,
+	"medicarePricesByCPT" : {
+		"76700" : 39.63,
+		"70460" : 51.23295774619718,
+		"72157" : 122.10128925359376
+	} ,
+	"providers" : [
+		{
+			"provider": {
+				"uuid": "5f31402f-d6f3-48db-bc19-9c4d89202e32",
+				"npi": "1932335577",
+				"entity_type": "individual",
+				"first_name": "Liliana",
+				"last_name": "Viera Ortiz",
+				"gender": "Female",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"address_lines": [
+							"2430 Cheshire Bridge Rd NE",
+							"Suite 431"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "2163968394",
+						"state": "GA",
+						"geo_location": [
+							-84.351511,
+							33.821391
+						],
+						"suite": "431"
+					}
+				],
+				"phone": "2163968394",
+				"degree": "MD",
+				"specialty": [
+					"Emergency Medicine"
+				],
+				"specialty_primary": [
+					"Emergency Medicine"
+				],
+				"licenses": [
+					{
+						"number": "Q2716",
+						"state": "TX"
+					}
+				],
+				"verified": false,
+				"specialty_secondary": [
+					"Physician"
+				]
+			},
+			"distance": 0.20009014371270428
+		},
+		{
+			"provider": {
+				"uuid": "873ecd78-fba9-4f63-86aa-e4fa88111fa0",
+				"npi": "1457455388",
+				"entity_type": "organization",
+				"organization_name": "Georgia Cvs Pharmacy, L.L.C.",
+				"other_organization_name": "Cvs Pharmacy #02186",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"address_lines": [
+							"2350 Cheshire Bridge Rd NE"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "4044867289",
+						"state": "GA",
+						"geo_location": [
+							-84.351485,
+							33.818864
+						]
+					}
+				],
+				"phone": "4044867289",
+				"specialty": [
+					"Pharmacy",
+					"Durable Medical Equipment & Medical Supplies",
+					"Community/Retail Pharmacy"
+				],
+				"specialty_primary": [
+					"Durable Medical Equipment & Medical Supplies",
+					"Community/Retail Pharmacy",
+					"Pharmacy"
+				],
+				"licenses": [
+					{
+						"state": "GA"
+					},
+					{
+						"number": "008263",
+						"state": "GA"
+					}
+				],
+				"verified": false,
+				"specialty_secondary": [
+					"Dental Providers (DDS/DMD/DDM)"
+				]
+			},
+			"distance": 0.22854709768965342
+		},
+		{
+			"provider": {
+				"uuid": "931741ef-159a-4f8d-9e58-1b2d82ea3f8c",
+				"npi": "1134302490",
+				"entity_type": "organization",
+				"organization_name": "Live Well Chiropractic PC",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"address_lines": [
+							"2345 Cheshire Bridge Rd NE",
+							"Suite 5"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "4042350995",
+						"state": "GA",
+						"geo_location": [
+							-84.351518,
+							33.81869
+						],
+						"suite": "5"
+					}
+				],
+				"phone": "4042350995",
+				"specialty": [
+					"Chiropractor",
+					"Alternative Medicine"
+				],
+				"specialty_primary": [
+					"Chiropractor"
+				],
+				"specialty_secondary": [
+					"Chiropractic Providers (DC)"
+				],
+				"licenses": [
+					{
+						"number": "CHIR006309",
+						"state": "GA"
+					}
+				],
+				"website_url": "livewellchiropractic.com",
+				"verified": false
+			},
+			"distance": 0.23355058897274206
+		},
+		{
+			"provider": {
+				"uuid": "73016c9e-04b7-487d-bda9-490c4f7e8459",
+				"npi": "1790738649",
+				"entity_type": "organization",
+				"organization_name": "Publix Super Markets Inc",
+				"other_organization_name": "Publix Pharmacy #1044",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"fax": "4046381910",
+						"address_lines": [
+							"2325 Cheshire Bridge Rd NE"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "4046381905",
+						"state": "GA",
+						"geo_location": [
+							-84.351704,
+							33.818212
+						]
+					}
+				],
+				"phone": "4046381905",
+				"fax": "4046381910",
+				"specialty": [
+					"Pharmacy",
+					"Community/Retail Pharmacy"
+				],
+				"specialty_primary": [
+					"Community/Retail Pharmacy",
+					"Pharmacy"
+				],
+				"licenses": [
+					{
+						"number": "PHRE009055",
+						"state": "GA"
+					}
+				],
+				"verified": false
+			},
+			"distance": 0.24577386969455686
+		},
+		{
+			"provider": {
+				"uuid": "09150f02-82e4-4199-9b7b-9efd633b3942",
+				"npi": "1194747683",
+				"entity_type": "individual",
+				"prefix": "MRS",
+				"first_name": "Alma",
+				"middle_name": "Bangs",
+				"last_name": "Johnson",
+				"gender": "Female",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"fax": "4046381910",
+						"address_lines": [
+							"2325 Cheshire Bridge Rd NE"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "4046381905",
+						"state": "GA",
+						"geo_location": [
+							-84.351704,
+							33.818212
+						]
+					}
+				],
+				"phone": "4046381905",
+				"fax": "4046381910",
+				"degree": "PHARMD",
+				"specialty": [
+					"Pharmacist",
+					"Pharmacy"
+				],
+				"specialty_primary": [
+					"Pharmacy"
+				],
+				"specialty_secondary": [
+					"Allied Professional"
+				],
+				"licensures": [
+					{
+						"status": "active",
+						"verified": "Y",
+						"expiration_date": "2016-12-31",
+						"number": "17558",
+						"state": "GA"
+					}
+				],
+				"licenses": [
+					{
+						"number": "17558",
+						"state": "GA"
+					}
+				],
+				"facilities": [
+					{
+						"npi": "1790738649",
+						"organization_name": "Publix Super Markets Inc"
+					}
+				],
+				"verified": false
+			},
+			"distance": 0.24577386969455686
+		},
+		{
+			"provider": {
+				"uuid": "86ff1a75-a63c-4eb4-8900-5e04ab2d1cce",
+				"npi": "1508097429",
+				"entity_type": "individual",
+				"prefix": "DR",
+				"first_name": "Stephanie",
+				"middle_name": "Perrino",
+				"last_name": "Duthie",
+				"gender": "Female",
+				"locations": [
+					{
+						"city": "Atlanta",
+						"fax": "4046381910",
+						"address_lines": [
+							"2325 Cheshire Bridge Rd NE"
+						],
+						"zipcode": "30324",
+						"county": "Fulton",
+						"phone": "4046381905",
+						"state": "GA",
+						"geo_location": [
+							-84.351704,
+							33.818212
+						]
+					}
+				],
+				"phone": "4046381905",
+				"fax": "4046381910",
+				"degree": "PHARMD",
+				"specialty": [
+					"Pharmacist",
+					"Pharmacy"
+				],
+				"specialty_primary": [
+					"Pharmacy"
+				],
+				"specialty_secondary": [
+					"Allied Professional"
+				],
+				"licensures": [
+					{
+						"status": "active",
+						"verified": "Y",
+						"expiration_date": "2016-12-31",
+						"number": "RPH024332",
+						"state": "GA"
+					}
+				],
+				"licenses": [
+					{
+						"number": "RPH024332",
+						"state": "GA"
+					}
+				],
+				"facilities": [
+					{
+						"npi": "1790738649",
+						"organization_name": "Publix Super Markets Inc"
+					}
+				],
+				"verified": false
+			},
+			"distance": 0.24577386969455686
+		}, 
+		{
+      "provider": {
+        "uuid": "1bd200e3-e68d-4096-bc76-b7bc4c2457d9",
+        "npi": "1538442405",
+        "entity_type": "individual",
+        "first_name": "Tiffany",
+        "middle_name": "Lavonne",
+        "last_name": "Davenport",
+        "birth_date": "1985",
+        "gender": "Female",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "fax": "4044778889",
+            "address_lines": [
+              "555 10th St NW"
+            ],
+            "zipcode": "30318",
+            "county": "Fulton",
+            "phone": "4044778888",
+            "state": "GA",
+            "geo_location": [
+              -84.40452,
+              33.781548
+            ]
+          }
+        ],
+        "phone": "4044778888",
+        "fax": "4044778889",
+        "degree": "PT",
+        "specialty": [
+          "Physical Therapy",
+          "Physical Therapist",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health"
+        ],
+        "specialty_primary": [
+          "Physical Therapy"
+        ],
+        "specialty_secondary": [
+          "Allied Professional"
+        ],
+        "licenses": [
+          {
+            "number": "PT010455",
+            "state": "GA"
+          },
+          {
+            "number": "25677",
+            "state": "MD"
+          }
+        ],
+        "facilities": [
+          {
+            "npi": "1154409381",
+            "organization_name": "The Sports Rehabilitation Center"
+          }
+        ],
+        "verified": false
+      },
+      "distance": 0.44998248118019846
+    },
+    {
+      "provider": {
+        "uuid": "55dc8b3e-be54-4cf7-a8aa-9aad540ae1a7",
+        "npi": "1184931271",
+        "entity_type": "individual",
+        "first_name": "Christynne",
+        "middle_name": "Elizabeth",
+        "last_name": "Papincak",
+        "gender": "Female",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "fax": "4044778889",
+            "address_lines": [
+              "555 10th St NW"
+            ],
+            "zipcode": "30318",
+            "county": "Fulton",
+            "phone": "4044778888",
+            "state": "GA",
+            "geo_location": [
+              -84.40452,
+              33.781548
+            ]
+          }
+        ],
+        "phone": "4044778888",
+        "fax": "4044778889",
+        "degree": "PT",
+        "specialty": [
+          "Physical Therapy",
+          "Physical Therapist",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health"
+        ],
+        "specialty_primary": [
+          "Physical Therapy"
+        ],
+        "specialty_secondary": [
+          "Allied Professional"
+        ],
+        "licenses": [
+          {
+            "number": "PT010078",
+            "state": "GA"
+          }
+        ],
+        "facilities": [
+          {
+            "npi": "1154409381",
+            "organization_name": "The Sports Rehabilitation Center"
+          }
+        ],
+        "verified": false
+      },
+      "distance": 0.44998248118019846
+    },
+    {
+      "provider": {
+        "uuid": "475c190b-ff9c-4097-a489-d6492839b987",
+        "npi": "1154409381",
+        "entity_type": "organization",
+        "organization_name": "The Sports Rehabilitation Center",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "fax": "4044778889",
+            "address_lines": [
+              "555 10th St NW"
+            ],
+            "zipcode": "30318",
+            "county": "Fulton",
+            "phone": "4044778888",
+            "state": "GA",
+            "geo_location": [
+              -84.40452,
+              33.781548
+            ]
+          }
+        ],
+        "phone": "4044778888",
+        "fax": "4044778889",
+        "specialty": [
+          "Physical Therapy",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health",
+          "Clinic"
+        ],
+        "specialty_primary": [
+          "Physical Therapy"
+        ],
+        "specialty_secondary": [
+          "Physical Medicine & Rehabilitation",
+          "Allied Health",
+          "Clinic"
+        ],
+        "website_url": "www.sportsrehabcenter.com",
+        "verified": false
+      },
+      "distance": 0.44998248118019846
+    },
+    {
+      "provider": {
+        "uuid": "57be32ef-ec2d-496d-b9fb-31f457064dbf",
+        "npi": "1417178633",
+        "entity_type": "organization",
+        "organization_name": "Georgia Tech Sports Medicine And Rehab",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "fax": "4048940695",
+            "address_lines": [
+              "150 Bobby Dodd Way"
+            ],
+            "zipcode": "30332",
+            "county": "Fulton",
+            "phone": "4043854115",
+            "state": "GA",
+            "geo_location": [
+              -84.391696,
+              33.773875
+            ]
+          }
+        ],
+        "phone": "4043854115",
+        "fax": "4048940695",
+        "specialty": [
+          "Physical Therapy",
+          "Physical Therapist",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health"
+        ],
+        "specialty_primary": [
+          "Physical Therapy",
+          "Physical Therapist"
+        ],
+        "specialty_secondary": [
+          "Therapy Providers (PT/OT)"
+        ],
+        "licenses": [
+          {
+            "number": "6601",
+            "state": "GA"
+          }
+        ],
+        "website_url": "www.georgiatechconcessions.com",
+        "verified": false
+      },
+      "distance": 0.4606854085757361
+    },
+    {
+      "provider": {
+        "uuid": "fe687c91-eb2d-465f-b0f5-f24ede98a35a",
+        "npi": "1245418987",
+        "entity_type": "individual",
+        "prefix": "MS",
+        "first_name": "Dinika",
+        "middle_name": "Shannelle",
+        "last_name": "Johnson",
+        "gender": "Male",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "address_lines": [
+              "150 Bobby Dodd Way NW"
+            ],
+            "zipcode": "30332",
+            "county": "Fulton",
+            "phone": "4048943692",
+            "state": "GA",
+            "geo_location": [
+              -84.391696,
+              33.773875
+            ]
+          }
+        ],
+        "phone": "4048943692",
+        "degree": "ATC",
+        "specialty": [
+          "Athletic Training",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health",
+          "Sports Medicine"
+        ],
+        "specialty_primary": [
+          "Sports Medicine"
+        ],
+        "specialty_secondary": [
+          "Allied Professional"
+        ],
+        "verified": false
+      },
+      "distance": 0.4606854085757361
+    },
+    {
+      "provider": {
+        "uuid": "b56c02e4-c246-456a-861e-889b60f986d1",
+        "npi": "1477788008",
+        "entity_type": "individual",
+        "first_name": "Charlie",
+        "middle_name": "D",
+        "last_name": "Ridgeway",
+        "birth_date": "1976",
+        "gender": "Male",
+        "locations": [
+          {
+            "city": "Atlanta",
+            "fax": "4048940695",
+            "address_lines": [
+              "150 Bobby Dodd Way"
+            ],
+            "zipcode": "30332",
+            "county": "Fulton",
+            "phone": "4043854115",
+            "state": "GA",
+            "geo_location": [
+              -84.391696,
+              33.773875
+            ]
+          }
+        ],
+        "phone": "4043854115",
+        "fax": "4048940695",
+        "degree": "PT",
+        "specialty": [
+          "Physical Therapy",
+          "Physical Therapist",
+          "Physical Medicine & Rehabilitation",
+          "Allied Health"
+        ],
+        "specialty_primary": [
+          "Physical Therapy"
+        ],
+        "specialty_secondary": [
+          "Allied Professional"
+        ],
+        "licenses": [
+          {
+            "number": "6601",
+            "state": "GA"
+          }
+        ],
+        "facilities": [
+          {
+            "npi": "1417178633",
+            "organization_name": "Georgia Tech Sports Medicine And Rehab"
+          }
+        ],
+        "verified": false
+      },
+      "distance": 0.4606854085757361
+    }
+  ]
+}
+
+
