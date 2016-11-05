@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-freelancer/1.0.5/css/freelancer.min.css" />
     <link rel="stylesheet" href="GrokmedApp.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index home">
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -36,12 +35,38 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Service</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>MRI</option>
+                            <option>CT Scan</option>
+                            <option>Ultra Sound</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Insurance</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>AETNA</option>
+                            <option>Medicaid</option>
+                            <option>Medicare</option>
+                            <option>Blue Cross</option>
+                            <option>United Healthcare</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode">
+                    </div>
+                </form>
+                <!-- <p><a class="btn  btn-md pull-right" href="#" role="button">Search &raquo;</a></p>-->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll"><a href="#/s/taxonomy">Login</a></li>
+                    <li class="page-scroll"><a href="#/s/Login">Login</a></li>
                     <li class="page-scroll"><a href="#/s/about">About</a></li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -49,74 +74,39 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container internal">
-
-
-        <div class="omb_login">
-            <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
-            <div class="row omb_row-sm-offset-3 omb_socialButtons">
-                <div class="col-xs-4 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
-                        <i class="fa fa-facebook visible-xs"></i>
-                        <span class="hidden-xs">Facebook</span>
-                    </a>
+    <h1>SERVICE DESIRED</h1>
+    <div class="jumbotron">
+        <div class="container intern">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media-body">
+                        <figure class="figure">
+                            <img src="logo.png" class="img-thumbnail" width="200" height="200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption">John Doe
+                                <div class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
-                        <i class="fa fa-twitter visible-xs"></i>
-                        <span class="hidden-xs">Twitter</span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <a href="#" class="btn btn-lg btn-block omb_btn-google">
-                        <i class="fa fa-google-plus visible-xs"></i>
-                        <span class="hidden-xs">Google+</span>
-                    </a>
-                </div>
-            </div>
+                <div class="col-md-6">
 
-            <div class="row omb_row-sm-offset-3 omb_loginOr">
-                <div class="col-xs-12 col-sm-6">
-                    <hr class="omb_hrOr">
-                    <span class="omb_spanOr">or</span>
-                </div>
-            </div>
-
-            <div class="row omb_row-sm-offset-3">
-                <div class="col-xs-12 col-sm-6">
-                    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" name="username" placeholder="email address">
-                        </div>
-                        <span class="help-block"></span>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="password" class="form-control" name="password" placeholder="Password">
-                        </div>
-                        <span class="help-block"></span>
-
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                    </form>
-                </div>
-            </div>
-            <div class="row omb_row-sm-offset-3">
-                <div class="col-xs-12 col-sm-3">
-                    <label class="checkbox">
-                        <input type="checkbox" value="remember-me">Remember Me
-                    </label>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                    <p class="omb_forgotPwd">
-                        <a href="#">Forgot password?</a>
-                    </p>
                 </div>
             </div>
         </div>
-
-
-
+    </div>
+    <!--
+                <ul class="list-inline">
+                    <li>
+                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <img src="logo.png" style="height: 5%;">
+                    </li>
+                </ul>
+-->
+    </div>
     </div>
     <!-- Header -->
     <!-- Header -->
@@ -181,9 +171,10 @@
             </div>
         </div>
     </footer>
+
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
+        <a class="btn " href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
