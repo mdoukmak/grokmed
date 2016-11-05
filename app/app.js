@@ -12,7 +12,6 @@ app.use(express.static('public'));
 app.get('/', function(req, res) {
 	res.render('home');
 });
-
 app.set('view engine', 'ejs');
 app.post('/search', function(req, res) {
 	resultArray = getProviderList(req.body.cpt, req.body.insurance, req.body.zipcode);
