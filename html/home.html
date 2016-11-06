@@ -49,35 +49,34 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1></h1>
-            <form class="form-inline" action="/search" method="POST">
-                <div class="form-group">
-                    <label for="exampleSelect1">Service</label>
-                    <select class="form-control" id="exampleSelect1" name="cpt">
-                        <option name="76700">MRI</option>
-                        <option name="70460">CT Scan</option>
-                        <option name="72157">Ultra Sound</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleSelect1">Insurance</label>
-                    <select class="form-control" id="exampleSelect1" name="insurance">
-                        <option name="aetna">AETNA</option>
-                        <option name="medicaid">Medicaid</option>
-                        <option name="medicare">Medicare</option>
-                        <option name="bcbs">Blue Cross</option>
-                        <option name="united">United Healthcare</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="zipCode">Zip Code</label>
-                    <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode" name="zipcode">
-                </div>
-                <p>
-                    <input class="btn btn-primary btn-lg pull-right" href="#" role="button" value="Search &raquo;" type="submit" />
-                </p>
-            </form>
-
+            <div class="row resultRow">
+                <form class="form-inline" action="/search" method="POST">
+                    <div class="form-group col-md-3">
+                        <select class="form-control" id="exampleSelect1" name="cpt">
+                            <option value="">Select a service</option>
+                            <option value="76700">MRI</option>
+                            <option value="70460">CT Scan</option>
+                            <option value="72157">Ultra Sound</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select class="form-control" id="exampleSelect1" name="insurance">
+                            <option name="">Select your insurance</option>
+                            <option name="aetna">AETNA</option>
+                            <option name="medicaid">Medicaid</option>
+                            <option name="medicare">Medicare</option>
+                            <option name="bcbs">Blue Cross</option>
+                            <option name="united">United Healthcare</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode" name="zipcode">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="btn btn-primary btn-md pull-right" href="#" role="button" value="Search &raquo;" type="submit" />
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Header -->
