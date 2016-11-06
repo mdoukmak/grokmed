@@ -56,7 +56,10 @@
 					"Physician"
 				]
 			},
-			"distance": 0.20009014371270428
+			"distance": 0.20009014371270428,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
+
 		},
 		{
 			"provider": {
@@ -106,7 +109,9 @@
 					"Dental Providers (DDS/DMD/DDM)"
 				]
 			},
-			"distance": 0.22854709768965342
+			"distance": 0.22854709768965342,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
 		},
 		{
 			"provider": {
@@ -152,7 +157,9 @@
 				"website_url": "livewellchiropractic.com",
 				"verified": false
 			},
-			"distance": 0.23355058897274206
+			"distance": 0.23355058897274206,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
 		},
 		{
 			"provider": {
@@ -196,7 +203,9 @@
 				],
 				"verified": false
 			},
-			"distance": 0.24577386969455686
+			"distance": 0.24577386969455686,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
 		},
 		{
 			"provider": {
@@ -261,7 +270,9 @@
 				],
 				"verified": false
 			},
-			"distance": 0.24577386969455686
+			"distance": 0.24577386969455686,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
 		},
 		{
 			"provider": {
@@ -326,7 +337,9 @@
 				],
 				"verified": false
 			},
-			"distance": 0.24577386969455686
+			"distance": 0.24577386969455686,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
 		}, 
 		{
       "provider": {
@@ -388,7 +401,9 @@
         ],
         "verified": false
       },
-      "distance": 0.44998248118019846
+      "distance": 0.44998248118019846,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     },
     {
       "provider": {
@@ -445,7 +460,9 @@
         ],
         "verified": false
       },
-      "distance": 0.44998248118019846
+      "distance": 0.44998248118019846,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     },
     {
       "provider": {
@@ -489,7 +506,9 @@
         "website_url": "www.sportsrehabcenter.com",
         "verified": false
       },
-      "distance": 0.44998248118019846
+      "distance": 0.44998248118019846,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     },
     {
       "provider": {
@@ -538,7 +557,9 @@
         "website_url": "www.georgiatechconcessions.com",
         "verified": false
       },
-      "distance": 0.4606854085757361
+      "distance": 0.4606854085757361,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     },
     {
       "provider": {
@@ -582,7 +603,9 @@
         ],
         "verified": false
       },
-      "distance": 0.4606854085757361
+      "distance": 0.4606854085757361,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     },
     {
       "provider": {
@@ -640,7 +663,9 @@
         ],
         "verified": false
       },
-      "distance": 0.4606854085757361
+      "distance": 0.4606854085757361,
+			"appointments" : [
+				"3:00pm", "4:00pm", "5:00pm"]
     }
   ]
 }

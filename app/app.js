@@ -15,11 +15,33 @@ app.get('/', function(req, res) {
 app.set('view engine', 'ejs');
 app.post('/search', function(req, res) {
 	resultArray = getProviderList(req.body.cpt, req.body.insurance, req.body.zipcode);
+	serv = getServiceName(req.body.cpt);
 	res.render('results', {
-		results: resultArray
+		results: resultArray,
+		service: serv
 	});	
 });
+app.post('/schedule', function(req, res) {
+	console.log();
+});
 
+function getServiceName(cpt) {
+	var toReturn;
+	switch (cpt) {
+		case "76700":
+			toReturn = "Abdominal Ultrasound";
+			break;
+		case "70460":
+			toReturn = "Brain CT";
+			break;
+		case "72157":
+			toReturn = "Lumbar Spine MRI";
+			break;
+		default:
+			console.log("Invalid cpt translation");
+	}
+	return toReturn;
+}
 function getAveragePrice(cpt, insurance, zipcode) {
 	var base;
 	var insurPrices = datafile.insurancePricesByCPT[cpt];
@@ -53,7 +75,6 @@ function getProviderList(cpt, insurance, zipcode) {
 	var basePrice = getAveragePrice(cpt, insurance, zipcode);
 	var providerList = datafile.providers;
 	var returnList = [];
-	console.log("cpt:" + cpt + "insurance:" + insurance + "zipcode:" + zipcode);
 	switch(cpt) {
 		case "76700":
 			returnList.push(providerList[1]);
@@ -71,11 +92,10 @@ function getProviderList(cpt, insurance, zipcode) {
 			returnList.push(providerList[8]);
 			break;
 		default:
-			console.log("Invalid cpt");
+			console.log("Invalid cpt get");
 	}
 	for (i = 0; i < 3; i++) {
-    	returnList[i].price=basePrice*(1+.1*(2*Math.random()-1));
-    	console.log(returnList[i]);
+    	returnList[i].price=(basePrice*(1+.1*(2*Math.random()-1))).toFixed(2);
 	}
 	return returnList;
 }

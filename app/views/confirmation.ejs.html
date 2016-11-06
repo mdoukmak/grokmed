@@ -17,6 +17,7 @@
 
 <body id="page-top" class="index home">
 
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,12 +35,39 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleSelect1">Service</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>MRI</option>
+                            <option>CT Scan</option>
+                            <option>Ultra Sound</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Insurance</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>AETNA</option>
+                            <option>Medicaid</option>
+                            <option>Medicare</option>
+                            <option>Blue Cross</option>
+                            <option>United Healthcare</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode">
+                    </div>
+                </form> -->
+                <!-- <p><a class="btn  btn-md pull-right" href="#" role="button">Search &raquo;</a></p>-->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll"><a href="#/s/taxonomy">Login</a></li>
+                    <li class="page-scroll"><a href="#/s/Login">Login</a></li>
                     <li class="page-scroll"><a href="#/s/about">About</a></li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -48,37 +76,52 @@
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <div class="container">
-            <h1></h1>
-            <form class="form-inline" action="/search" method="POST">
-                <div class="form-group">
-                    <label for="exampleSelect1">Service</label>
-                    <select class="form-control" id="exampleSelect1" name="cpt">
-                        <option value="72157">Lumbar Spine MRI</option>
-                        <option value="70460">Brain CT Scan</option>
-                        <option value="76700">Abdominal Ultrasound</option>
-                    </select>
+        <div class="container intern">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media-body">
+                        <figure class="figure">
+                            <img src="logo.png" class="img-thumbnail" width="200" height="200" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <div class=r ow>
+                                <div class="col-md-4">
+                                    <figcaption class="figure-caption">John Doe
+                                        <div class="rating">
+                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                        </div>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleSelect1">Insurance</label>
-                    <select class="form-control" id="exampleSelect1" name="insurance">
-                        <option value="aetna">AETNA</option>
-                        <option value="medicaid">Medicaid</option>
-                        <option value="medicare">Medicare</option>
-                        <option value="bcbs">Blue Cross</option>
-                        <option value="united">United Healthcare</option>
-                    </select>
+                <div class="col-md-6">
+                    <h2>Service</h2>
+                    <h2>Time</h2>
+                    <h2>Price</h2>
+                    <h2>Location</h2>
                 </div>
-                <div class="form-group">
-                    <label for="zipCode">Zip Code</label>
-                    <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode" name="zipcode">
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
                 </div>
-                <p>
-                    <input class="btn btn-primary btn-lg pull-right" href="#" role="button" value="Search &raquo;" type="submit" />
-                </p>
-            </form>
-
+                <div class="col-md-2"></div>
+            </div>
         </div>
+    </div>
+
+    <!--
+                <ul class="list-inline">
+                    <li>
+                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <img src="logo.png" style="height: 5%;">
+                    </li>
+                </ul>
+-->
+    </div>
     </div>
     <!-- Header -->
     <!-- Header -->
@@ -146,7 +189,7 @@
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
+        <a class="btn " href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
