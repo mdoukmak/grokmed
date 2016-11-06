@@ -20,15 +20,6 @@ app.post('/search', function(req, res) {
 	});	
 });
 
-
-
-var options = {
-  url: 'https://platform.pokitdok.com/api/v4/providers/?zipcode=30332',
-  headers: {
-    'Authorization': 'Bearer PefJGRb22ASqMr9WgtTfOZN2BYOaPA0vzWrRtnmw'
-  }
-};
-
 function getAveragePrice(cpt, insurance, zipcode) {
 	var base;
 	var insurPrices = datafile.insurancePricesByCPT[cpt];
@@ -89,17 +80,7 @@ function getProviderList(cpt, insurance, zipcode) {
 	return returnList;
 }
 
-//var output = getProviderList("76700", "medicare", 30324);
 
-// function callback(error, response, body) {
-//   if (!error && response.statusCode == 200) {
-//     var info = JSON.parse(body);
-//     console.log(info.data);
-//   }
-// }
- 
-// request(options, callback);
-	
 var server = app.listen(3000, function() {
 	console.log('Listening on port 3000');
 });

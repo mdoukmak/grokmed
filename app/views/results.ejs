@@ -2,15 +2,15 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!-- Optional theme -->
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<!-- Optional theme -->
+	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-freelancer/1.0.5/css/freelancer.min.css" />
-    <link rel="stylesheet" href="GrokmedApp.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-freelancer/1.0.5/css/freelancer.min.css" />
+	<link rel="stylesheet" href="GrokmedApp.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
 
 </head>
@@ -18,213 +18,137 @@
 <body id="page-top" class="index">
 
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="/">
-                    <img src="logo.png" style="height: 400%;">
-                </a>
-            </div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="/">
+					<img src="logo.png" style="height: 400%;">
+				</a>
+			</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for="exampleSelect1">Service</label>
-                        <select class="form-control" id="exampleSelect1">
-                            <option>MRI</option>
-                            <option>CT Scan</option>
-                            <option>Ultra Sound</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleSelect1">Insurance</label>
-                        <select class="form-control" id="exampleSelect1">
-                            <option>AETNA</option>
-                            <option>Medicaid</option>
-                            <option>Medicare</option>
-                            <option>Blue Cross</option>
-                            <option>United Healthcare</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="zipCode">Zip Code</label>
-                        <input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode">
-                    </div>
-                </form>
-                <!-- <p><a class="btn  btn-md pull-right" href="#" role="button">Search &raquo;</a></p>-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll"><a href="#/s/Login">Login</a></li>
-                    <li class="page-scroll"><a href="#/s/about">About</a></li>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<form class="form-inline" action="/search" method="POST">
+					<div class="form-group">
+						<label for="exampleSelect1">Service</label>
+						<select class="form-control" id="exampleSelect1" name="cpt">
+							<option value="76700">MRI</option>
+							<option value="70460">CT Scan</option>
+							<option value="72157">Ultra Sound</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleSelect1">Insurance</label>
+						<select class="form-control" id="exampleSelect1" name="insurance">
+							<option value="aetna">AETNA</option>
+							<option value="medicaid">Medicaid</option>
+							<option value="medicare">Medicare</option>
+							<option value="bcbs">Blue Cross</option>
+							<option value="united">United Healthcare</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="zipCode">Zip Code</label>
+						<input type="zip code" class="form-control" id="zipCode" aria-describedby="zipCode" placeholder="enter your zipcode" name="zipcode">
+					</div>
+				</form>
+				<!-- <p><a class="btn  btn-md pull-right" href="#" role="button">Search &raquo;</a></p>-->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll"><a href="#/s/Login">Login</a></li>
+					<li class="page-scroll"><a href="#/s/about">About</a></li>
 
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container internal">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="media-left">
-                        <img src="logo.PNG" class="media-object" style="width:60px">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Dr. John Doe</h4>
-                        <div class="rating">
-                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                        </div>
-                        <p>Service</p>
-                        <p>Price</p>
-                        <p>Address</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <table class="table">
-                    <caption>Appointment times</caption>
-                    <thead>
-                        <tr>
-                            <th>Nov 5</th>
-                            <th>Nov 6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="btn btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="btn btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="container internal">
+		<% for(var i=0; i<results.length; i++) {%>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="media">
+					<div class="media-left">
+						<img src="logo.PNG" class="media-object" style="width:60px">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Dr. John Doe</h4>
+						<div class="rating">
+							<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+						</div>
+						<p>Service</p>
+						<p>Price</p>
+						<p>Address</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<table class="table">
+					<caption>Appointment times</caption>
+					<thead>
+						<tr>
+							<th>Nov 5</th>
+							<th>Nov 6</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="btn btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
+							<td>
+								<div class="btn btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="btn btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
+							<td>
+								<div class="btn  btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="btn  btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
+							<td>
+								<div class="btn  btn-xs">
+									<button type="button" class="btn btn-default">Button 1</button>
+								</div>
+							</td>
 
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="media-left">
-                        <img src="logo.PNG" class="media-object" style="width:60px">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Dr. John Doe</h4>
-                        <div class="rating">
-                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                        </div>
-                        <p>Service</p>
-                        <p>Price</p>
-                        <p>Address</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <table class="table">
-                    <caption>Appointment times</caption>
-                    <thead>
-                        <tr>
-                            <th>Nov 5</th>
-                            <th>Nov 6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="btn  btn-xs">
-                                    <button type="button" class="btn btn-default">Button 1</button>
-                                </div>
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!--
-                <ul class="list-inline">
-                    <li>
-                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <img src="logo.png" style="height: 5%;">
-                    </li>
-                </ul>
--->
-    </div>
-    </div>
-    <!-- Header -->
-    <!-- Header -->
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<% } %>
+	</div>
+</div>
+<!-- Header -->
+<!-- Header -->
     <!--
     <section>
         <div class="container">
@@ -236,16 +160,16 @@
 -->
 
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Contact</h3>
-                        <p>P: 803-361-8008 Email: team@grokmed.com
-                        </p>
-                    </div>
+<!-- Footer -->
+<footer class="text-center">
+	<div class="footer-above">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col col-md-6">
+					<h3>Contact</h3>
+					<p>P: 803-361-8008 Email: team@grokmed.com
+					</p>
+				</div>
                     <!-- <div class="footer-col col-md-4">
                         <h3></h3>
                          <h3>Around the Web</h3>
@@ -268,30 +192,30 @@
                             </li>
                         </ul>
 
-                        </div>             -->
+                    </div>             -->
                     <div class="footer-col col-md-6">
-                        <h3>About</h3>
-                        <p>Health care is the only service where you walk in without knowing how much it will cost. Change that with Grokmed!</p>
+                    	<h3>About</h3>
+                    	<p>Health care is the only service where you walk in without knowing how much it will cost. Change that with Grokmed!</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Providing Transpearency in Health
-                    </div>
-                </div>
-            </div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-lg-12">
+        				Providing Transpearency in Health
+        			</div>
+        		</div>
+        	</div>
         </div>
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn " href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+    	<a class="btn " href="#page-top">
+    		<i class="fa fa-chevron-up"></i>
+    	</a>
     </div>
 
 
