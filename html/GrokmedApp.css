@@ -14,6 +14,10 @@
     margin-top: 100px;
 }
 
+.jumbotron .intern {
+    background-color: #FFFFFF
+}
+
 .navbar-brand {
     margin-top: -30px;
 }
@@ -52,7 +56,15 @@ table {
     width: 75%;
 }
 
-.navbar {}
+.resultRow select,
+.resultRow input {
+    width: 100% !important;
+    vertical-align: middle;
+}
+
+figcaption {
+    background-color: aliceblue
+}
 
 
 /* buttons for login*/
